@@ -110,7 +110,7 @@ AnimationClip:
   - curve:
       serializedVersion: 2
       m_Curve:
-      - time: 0.1
+      - time: 0.083333336
         value: 0.93233085
         inSlope: Infinity
         outSlope: Infinity
@@ -494,7 +494,7 @@ AnimationClip:
   - curve:
       serializedVersion: 2
       m_Curve:
-      - time: 0.1
+      - time: 0.083333336
         value: 0.93233085
         inSlope: Infinity
         outSlope: Infinity
