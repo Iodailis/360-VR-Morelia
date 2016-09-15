@@ -75,6 +75,7 @@ public class flechaI : MonoBehaviour {
 			OnButtonSelected(this);
 
 		// Wait for the camera to fade out.
+		ray.setRayLength(15);
 		yield return StartCoroutine(m_CameraFade.BeginFadeOut(true));
 		// Load the level.
 		//SceneManager.LoadScene(m_SceneToLoad, LoadSceneMode.Single);
@@ -86,6 +87,7 @@ public class flechaI : MonoBehaviour {
 		Vector3 pos = GameObject.FindGameObjectWithTag(posNum.ToString()).transform.position;
 		m_Camera.transform.position = pos;
 		yield return StartCoroutine(m_CameraFade.BeginFadeIn(true));
+		ray.setRayLength(100);
 		yield return new WaitForSeconds (0);
 	}
 

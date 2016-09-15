@@ -18,6 +18,7 @@ public class startScript : MonoBehaviour {
 	//private GameObject m_Camera;
 
 	[SerializeField] private Animator anim; 
+	[SerializeField] private Animator anim2; 
 	[SerializeField] private GameObject menuitem1; 
 	[SerializeField] private GameObject menuitem2; 
 	[SerializeField] private GameObject menuitem3; 
@@ -63,8 +64,8 @@ public class startScript : MonoBehaviour {
 
 	private void HandleSelectionComplete()
 	{
-		if(!anim.GetCurrentAnimatorStateInfo (0).IsName ("pruebaShow"))
-			anim.Play ("pruebaShow");
+		if(!anim2.GetCurrentAnimatorStateInfo (0).IsName ("pruebaShow"))
+			anim2.Play ("pruebaShow");
 	}
 
 

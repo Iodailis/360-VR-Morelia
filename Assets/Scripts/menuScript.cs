@@ -59,6 +59,7 @@ public class menuScript : MonoBehaviour {
 		bool bool3 = close.isLooking ();
 		flechaI info = menuitem1.GetComponent<flechaI> ();
 		bool bool4 = info.isLooking ();
+
 		if (!bool1 && !bool2 && !bool3 && !bool4) {
 			if (!anim.GetCurrentAnimatorStateInfo (0).IsName ("scaleUp"))
 				anim.Play ("scaleDown");

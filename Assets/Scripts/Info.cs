@@ -36,12 +36,14 @@ public class Info : MonoBehaviour {
 	private void HandleOver()
 	{
 		isSpinning = false;
+		m_GazeOver = true;
 	}
 
 
 	private void HandleOut()
 	{
 		isSpinning = true;
+		m_GazeOver = false;
 	}
 
 
