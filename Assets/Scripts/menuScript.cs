@@ -51,15 +51,15 @@ public class menuScript : MonoBehaviour {
 
 	private void HandleOut()
 	{
-		mapButton mapa = menuitem3.GetComponent<mapButton> ();
-		//bool bool1 = mapa.isLooking ();
+		derechaI mapa = menuitem3.GetComponent<derechaI> ();
+		bool bool1 = mapa.isLooking ();
 		startScript start = menuitem4.GetComponent<startScript> ();
 		bool bool2 = start.isLooking ();
 		mapButton close = menuitem2.GetComponent<mapButton> ();
 		bool bool3 = close.isLooking ();
 		flechaI info = menuitem1.GetComponent<flechaI> ();
 		bool bool4 = info.isLooking ();
-		if (/*!bool1* &&*/ !bool2 && !bool3 && !bool4) {
+		if (!bool1 && !bool2 && !bool3 && !bool4) {
 			if (!anim.GetCurrentAnimatorStateInfo (0).IsName ("scaleUp"))
 				anim.Play ("scaleDown");
 			anim.SetBool ("scaleUp", false);

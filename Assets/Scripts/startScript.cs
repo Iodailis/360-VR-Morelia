@@ -46,7 +46,7 @@ public class startScript : MonoBehaviour {
 	private void HandleOver()
 	{
 		// When the user looks at the rendering of the scene, show the radial.
-		//m_SelectionRadial.Show();
+		m_SelectionRadial.Show();
 
 		StartCoroutine ("showMenuItems");
 
@@ -63,7 +63,8 @@ public class startScript : MonoBehaviour {
 
 	private void HandleSelectionComplete()
 	{
-		
+		if(!anim.GetCurrentAnimatorStateInfo (0).IsName ("pruebaShow"))
+			anim.Play ("pruebaShow");
 	}
 
 
@@ -84,16 +85,4 @@ public class startScript : MonoBehaviour {
 	public bool isLooking(){
 		return m_GazeOver;
 	}
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-
-
 }
