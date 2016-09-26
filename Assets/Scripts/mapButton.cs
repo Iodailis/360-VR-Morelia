@@ -75,7 +75,7 @@ public class mapButton : MonoBehaviour {
 			menu.SetBool ("scaleDown", true);
 
 			mapa.transform.localEulerAngles = new Vector3 (0, eyes.transform.localEulerAngles.y, 0);
-			mapaInterfaz.Play ("fadeIn");
+			mapaInterfaz.Play ("mapaShow");
 			m_SelectionRadial.Hide();
 			
 		}

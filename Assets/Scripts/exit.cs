@@ -74,14 +74,9 @@ namespace VRStandardAssets.exit
 		private void HandleSelectionComplete()
 		{
 			ray.setRayLength(100);
-			/*Animator anim = blackBG.GetComponent<Animator>();
-			anim.SetBool ("isFadingIn", false);
-			anim.SetBool ("isFadingOut", true);
-			mapa temp = mapa.GetComponentInChildren<mapa> ();
-			temp.StartCoroutine ("hideMap");
-			exitCol.enabled = false;*/
 
-			mapaInterfaz.Play ("fadeOut");
+
+			mapaInterfaz.Play ("mapHide");
 		}
 
 

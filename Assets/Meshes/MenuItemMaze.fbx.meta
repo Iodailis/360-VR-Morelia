@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: d543f6e64f0aff640804ae13251a2fdb
-timeCreated: 1470864776
+guid: 67f365ac1c99d5a4abdeb463736106c4
+timeCreated: 1473956127
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: MenuItemFlyer
+    4300000: MenuItemMaze
   materials:
     importMaterials: 1
     materialName: 0

@@ -163,6 +163,7 @@ namespace VRStandardAssets.Utils
             // If anything is subscribed to OnFadeComplete call it.
             if (OnFadeComplete != null)
                 OnFadeComplete();
+			
         }
     }
 }

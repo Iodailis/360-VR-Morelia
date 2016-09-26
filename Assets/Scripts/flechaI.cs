@@ -15,7 +15,7 @@ public class flechaI : MonoBehaviour {
 	[SerializeField] private VRInteractiveItem m_InteractiveItem;       // The interactive item for where the user should click to load the level.
 	[SerializeField] private VREyeRaycaster ray; 
 	private GameObject m_Camera;
-	private gcScript GameController;
+	[SerializeField] private gcScript GameController;
 
 
 
@@ -67,7 +67,7 @@ public class flechaI : MonoBehaviour {
 
 	private IEnumerator ActivateButton()
 	{
-		/*// If the camera is already fading, ignore.
+		// If the camera is already fading, ignore.
 		if (m_CameraFade.IsFading)
 			yield break;
 		// If anything is subscribed to the OnButtonSelected event, call it.
@@ -75,6 +75,7 @@ public class flechaI : MonoBehaviour {
 			OnButtonSelected(this);
 
 		// Wait for the camera to fade out.
+		ray.setRayLength(15);
 		yield return StartCoroutine(m_CameraFade.BeginFadeOut(true));
 		// Load the level.
 		//SceneManager.LoadScene(m_SceneToLoad, LoadSceneMode.Single);
@@ -85,7 +86,8 @@ public class flechaI : MonoBehaviour {
 			posNum = 12;
 		Vector3 pos = GameObject.FindGameObjectWithTag(posNum.ToString()).transform.position;
 		m_Camera.transform.position = pos;
-		yield return StartCoroutine(m_CameraFade.BeginFadeIn(true));*/
+		yield return StartCoroutine(m_CameraFade.BeginFadeIn(true));
+		ray.setRayLength(100);
 		yield return new WaitForSeconds (0);
 	}
 
